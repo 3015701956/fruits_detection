@@ -2,4 +2,4 @@
 
 View demo at:
 
-http://3.137.223.44:8501/
+https://3060040900-fruits-detection-fruits-detection-lttz91.streamlit.app/
