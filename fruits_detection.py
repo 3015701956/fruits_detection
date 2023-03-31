@@ -5,9 +5,9 @@ from PIL import Image
 from io import BytesIO
 import base64
 
-modelFile = '/home/ubuntu/fruits_detection/ssd_mobilenet_frozen_inference_graph.pb'
-configFile = '/home/ubuntu/fruits_detection/ssd_mobilenet_v2_coco_2018_03_29.pbtxt'
-classFile = '/home/ubuntu/fruits_detection/coco_class_labels.txt'
+modelFile = 'ssd_mobilenet_frozen_inference_graph.pb'
+configFile = 'ssd_mobilenet_v2_coco_2018_03_29.pbtxt'
+classFile = 'coco_class_labels.txt'
 
 # Create application title and file uploader widget.
 st.title("Fruits Detection")
@@ -93,7 +93,7 @@ if img_file_buffer is not None:
     # image = np.array(Image.open(img_file_buffer))
 
 else:
-    image = cv2.imread('/home/ubuntu/fruits_detection/fruit-vegetable.jpg')
+    image = cv2.imread('fruit-vegetable.jpg')
 
 # Create placeholders to display input and output images.
 placeholders = st.columns(2)
